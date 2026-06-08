@@ -18,9 +18,9 @@ export default function NewsletterSection() {
       <div className="max-w-4xl mx-auto px-4 text-center">
         <p className="font-sans-brand text-[10px] tracking-[0.35em] text-amber-400/70 uppercase mb-3">
           Newsletter
-          </p>
+        </p>
         <h2 className="font-serif-brand text-4xl lg:text-5xl font-light text-white mb-4">
-          Join the Élite Circle
+          Join the BFM Circle
         </h2>
         <div className="flex items-center gap-4 justify-center my-3 mb-6">
           <div className="w-12 h-px bg-gradient-to-r from-transparent to-amber-300/40" />
@@ -28,14 +28,18 @@ export default function NewsletterSection() {
           <div className="w-12 h-px bg-gradient-to-l from-transparent to-amber-300/40" />
         </div>
         <p className="font-sans-brand text-xs lg:text-sm font-light text-zinc-400 tracking-wider max-w-lg mx-auto mb-10 leading-relaxed">
-          Subscribe to receive private collection previews, exclusive sizing notifications, and seasonal drops.
+          Subscribe to receive private collection previews, exclusive sizing
+          notifications, and seasonal drops.
         </p>
         {submitted ? (
           <p className="font-sans-brand text-sm text-amber-300 tracking-[0.2em] uppercase font-semibold animate-pulse">
             Welcome to the Circle.
           </p>
         ) : (
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto">
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto"
+          >
             <input
               type="email"
               required

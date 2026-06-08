@@ -6,10 +6,10 @@ import HeroSection from "../components/HeroSection";
 import FeaturedCategories from "../components/FeaturedCategories";
 import NewArrivals from "../components/NewArrivals";
 import EditorialDrops from "../components/EditorialDrops";
-import BrandPromise from "../components/BrandPromise";
 import TestimonialsSection from "../components/TestimonialsSection";
 import NewsletterSection from "../components/NewsletterSection";
 import FooterSection from "../components/FooterSection";
+import BrandPromise from "@/Components/BrandPromise";
 
 export default function Home() {
   const [cartCount, setCartCount] = useState(2);
