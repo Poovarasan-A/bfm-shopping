@@ -1,15 +1,15 @@
 "use client";
 
 import { useState, useRef } from "react";
-import Navbar from "../components/Navbar";
-import HeroSection from "../components/HeroSection";
-import FeaturedCategories from "../components/FeaturedCategories";
-import NewArrivals from "../components/NewArrivals";
-import EditorialDrops from "../components/EditorialDrops";
-import TestimonialsSection from "../components/TestimonialsSection";
-import NewsletterSection from "../components/NewsletterSection";
-import FooterSection from "../components/FooterSection";
 import BrandPromise from "@/Components/BrandPromise";
+import Navbar from "@/Components/Navbar";
+import HeroSection from "@/Components/HeroSection";
+import FeaturedCategories from "@/Components/FeaturedCategories";
+import NewArrivals from "@/Components/NewArrivals";
+import EditorialDrops from "@/Components/EditorialDrops";
+import TestimonialsSection from "@/Components/TestimonialsSection";
+import NewsletterSection from "@/Components/NewsletterSection";
+import FooterSection from "@/Components/FooterSection";
 
 export default function Home() {
   const [cartCount, setCartCount] = useState(2);
