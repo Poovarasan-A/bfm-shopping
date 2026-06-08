@@ -1,6 +1,6 @@
-import React from 'react';
-import { GoldDivider } from './ui/SharedComponents';
-import { FEATURED_CATEGORIES } from '../components/constants';
+import React from "react";
+import { GoldDivider } from "./ui/SharedComponents";
+import { FEATURED_CATEGORIES } from "./constants";
 
 export default function FeaturedCategories() {
   return (
@@ -16,8 +16,16 @@ export default function FeaturedCategories() {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {FEATURED_CATEGORIES.map((cat) => (
-          <a key={cat.id} href={cat.href} className="group relative aspect-[3/4] overflow-hidden cursor-pointer block">
-            <img src={cat.img} alt={cat.label} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <a
+            key={cat.id}
+            href={cat.href}
+            className="group relative aspect-[3/4] overflow-hidden cursor-pointer block"
+          >
+            <img
+              src={cat.img}
+              alt={cat.label}
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
             <div className="absolute inset-0 flex flex-col justify-end p-7">
               <p className="font-sans-brand text-[10px] tracking-[0.25em] text-amber-300/80 uppercase mb-2">
@@ -28,8 +36,18 @@ export default function FeaturedCategories() {
               </h3>
               <span className="inline-flex items-center gap-2 font-sans-brand text-[11px] tracking-[0.2em] text-white/70 uppercase group-hover:text-amber-300 transition-colors">
                 {cat.tag}
-                <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                <svg
+                  className="w-4 h-4 transition-transform group-hover:translate-x-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
                 </svg>
               </span>
             </div>

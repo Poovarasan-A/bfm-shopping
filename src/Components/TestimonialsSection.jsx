@@ -29,10 +29,10 @@ export default function TestimonialsSection() {
               className="glass-card p-8 rounded-none border border-white/[0.06] hover:border-amber-400/20 transition-all duration-300 hover:shadow-2xl hover:shadow-black/50 flex flex-col justify-between relative"
             >
               <span className="absolute top-4 right-6 text-6xl font-serif text-white/[0.03] select-none pointer-events-none">
-                “
+                &ldquo;
               </span>
               <p className="font-sans-brand text-[13px] font-light text-zinc-400 leading-relaxed mb-6 italic">
-                "{t.text}"
+                &ldquo;{t.text}&rdquo;
               </p>
               <div className="flex items-center justify-between border-t border-white/[0.04] pt-4 mt-auto">
                 <div>
